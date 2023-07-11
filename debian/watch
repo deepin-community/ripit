@@ -1,0 +1,3 @@
+version=3
+
+http://ripit.pl/ripit	ripit-(.*)\.tar\.gz	debian	uupdate

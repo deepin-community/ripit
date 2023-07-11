@@ -1,0 +1,15 @@
+Description: According to DPP 5.1 all perl programs must start with
+             "#!/usr/bin/perl"
+Author: Elimar Riesebieter <riesebie@lxtec.de>
+Last-Update: 2010-02-22.
+
+Index: ripit-4.0.0~beta20140508/ripit.pl
+===================================================================
+--- ripit-4.0.0~beta20140508.orig/ripit.pl
++++ ripit-4.0.0~beta20140508/ripit.pl
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env perl
++#!/usr/bin/perl
+ ########################################################################
+ #
+ # LICENSE
