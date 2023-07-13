@@ -1,0 +1,12 @@
+ripit (4.0.0~rc20161009-1) unstable; urgency=medium
+
+    Freedb services where cancelled in March 2020. To use the alternative
+    gnudb database you have to set: 
+    CDDBHOST=gnudb.org
+    mirror=gnudb
+    transfer=http
+    proxy=http://proxy.gnudb.org:3128
+    in your ~/.ripit/config. If you rely on the /etc/ripit/config only
+    nothing has to be done.
+
+ -- Elimar Riesebieter <riesebie@lxtec.de>  Mon, 20 Jul 2020 17:52:18 +0200

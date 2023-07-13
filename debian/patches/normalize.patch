@@ -1,0 +1,21 @@
+Description: Sets normalize-audio as the default normcmd in /etc/ripit/config.
+Author: Elimar Riesebieter <riesebie@lxtec.de>
+Last-Update: 2010-02-21
+
+Index: ripit/config
+===================================================================
+--- ripit.orig/config
++++ ripit/config
+@@ -996,9 +996,10 @@ normalize=0
+ # normcmd: Command to be used to normalize.
+ # Possible values: string
+ # Example: normalize-audio (when using Debian)
+-# Default: normalize
++# Upstream default: normalize
+ 
+-normcmd=normalize
++# We are running Debian so set to normalize-audio
++normcmd=normalize-audio
+ 
+ # normopt: Options to pass to normalize
+ # Possible values: -a -nndB   : Normalize to -nn dB, default is -12dB,

@@ -1,0 +1,43 @@
+From fd7953e2a9f813e94c7f9dd4a571ba262d95bcde Mon Sep 17 00:00:00 2001
+From: Elimar Riesebieter <riesebie@lxtec.de>
+Date: Mon, 20 Jul 2020 17:39:53 +0200
+Subject: [PATCH] Fixed more typos in ripit.1
+
+---
+ ripit.1 | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/ripit.1 b/ripit.1
+index 3f2f51b..7ccc6a3 100644
+--- a/ripit.1
++++ b/ripit.1
+@@ -122,7 +122,7 @@ data tracks.
+ .IP
+ Note when using rip (Morituri) alle directories must be defined with
+ option \-\-dirtemplate, including a separate wav directory which will
+-be created by rip (Morituri). Further inconveniences migth be due to
++be created by rip (Morituri). Further inconveniences might be due to
+ the programs limitations and its recent development activity with
+ behaviour changing almost dayly, breaking every wrappers capabilities.
+ .IP
+@@ -870,7 +870,7 @@ to read /etc/ripit/config. Default: on.
+ .TP
+ \fB\-\-confname\fR
+ Read parameters from a specific configuration file if special options
+-are needed, this migth be useful if operator wants different settings
++are needed, this might be useful if operator wants different settings
+ for discs containing music than e.g. audio books. Default: config.
+ .TP
+ \fB\-\-confdir\fR
+@@ -891,7 +891,7 @@ on command line. Default: off.
+ .TP
+ \fB\-\-loop\fR \fIvalue\fP
+ After ejection of the previous CD continue ripping and encoding as soon
+-as a new CD has been feeded. This option forces ejection
++as a new CD has been fed. This option forces ejection
+ (\fB\-\-eject\fR). The value is either \fI0\fP
+ for normal use (single run) or \fI1\fP for (standard) looping.
+ Experimental value \fI2\fP might be used to force immediate restart of
+-- 
+2.28.0.rc1
+

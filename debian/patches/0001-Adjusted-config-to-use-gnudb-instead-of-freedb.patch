@@ -1,0 +1,51 @@
+From 42c52938aac347c5d0a068701ebabdf55283e63d Mon Sep 17 00:00:00 2001
+From: Elimar Riesebieter <riesebie@lxtec.de>
+Date: Mon, 20 Jul 2020 16:51:27 +0200
+Subject: [PATCH] Adjusted config to use gnudb instead of freedb
+
+---
+ config           | 10 +++++-----
+ debian/changelog |  2 +-
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/config b/config
+index 693c61b..4933d20 100644
+--- a/config
++++ b/config
+@@ -718,7 +718,7 @@ mb=0
+ # E.g. default server is freedb.freedb.org
+ # Default: freedb.org
+ 
+-CDDBHOST=freedb.org
++CDDBHOST=gnudb.org
+ 
+ # mirror: Selects freedb mirror
+ # Possible values: "freedb" or any freedb mirrors
+@@ -727,15 +727,15 @@ CDDBHOST=freedb.org
+ # E.g., default server is freedb.freedb.org
+ # Default: freedb
+ 
+-mirror=freedb
++mirror=gnudb
+ 
+ # transfer: Set transfer mode for cddb queries
+ # Possible values: cddb, http
+-# Note: CDDB servers freedb2.org and musicbrainz.org may need transfer
++# Note: musicbrainz.org may need transfer
+ # mode http.
+ # Default: cddb
+ 
+-transfer=cddb
++transfer=http
+ 
+ # proto: Set CDDP protocol level
+ # Possible values: 5, 6
+@@ -747,7 +747,7 @@ proto=6
+ # proxy: Address of http-proxy, if needed.
+ # Default: not set
+ 
+-proxy=
++proxy=http://proxy.gnudb.org:3128
+ 
+ # mailad: Mail address for cddb submissions.
+ # Possible values: Valid user email address for submitting cddb entries
